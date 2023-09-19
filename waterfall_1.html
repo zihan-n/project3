@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waterfall Adventure</title>
+    <style>
+        body {
+            background-image: url('waterfall.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .center-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        img {
+            position: fixed;
+            bottom: 0;
+        }
+        img#leftturtle {
+            left: -100px;
+            animation: slideInLeft 3s forwards 0s;
+            width: 200px;
+            height: 200px;
+        }
+        img#rightdog {
+            right: -100px;
+            animation: slideInRight 3s forwards 2s;
+            width: 200px;
+            height: 200px;
+        }
+        @keyframes slideInLeft {
+            to { left: 0; }
+        }
+        @keyframes slideInRight {
+            to { right: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="Turtle.jpg" id="leftturtle">
+    <img src="dog.jpg" id="rightdog">
+    <div class="center-content">
+        <!-- Background information -->
+       
+        You comes to the west side of the waterfall and finds that it's completely different from what was described on TV. Instead of fearsome beasts or harsh environments, it is a peaceful community filled with various cybernetic animals.
+        </p>
+       
+        A cybernetic turtle appears and says, "Hello, new friend！"
+        </p>
+       
+        The dog continues, "Welcome！"
+        </p>
+        <!-- Choices -->
+        <p>Upon seeing a dog with a robotic body and a turtle with jet boosters, you decide to...</p>
+        <a href="forest_tv_end2.html"><button>This is too weird, I want to go back.</button></a>
+        <a href="cyborg_community.html"><button>Tell me more!</button></a>
+    </div>
+</body>
+</html>

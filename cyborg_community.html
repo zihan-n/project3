@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyborg Community</title>
+    <style>
+        body {
+            background-image: url('cyborg_community.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: "Courier New", monospace;
+        }
+        .center-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .hidden-content {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            animation: flowing 5s infinite alternate;
+        }
+        @keyframes flowing {
+            from {
+                opacity: 0.5;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center-content" onclick="hideContent()">
+        <p>In this high-tech community filled with cybernetic animals, traditional ecological hierarchies are shattered as technology empowers true equality and freedom. Cybernetic rabbits, tigers, and birds are no longer confined by biological labels like "herbivore" or "carnivore." Technology allows them to break free from nature's limitations, achieving an equitable social structure and a collaborative decision-making process. Here, gender, race, and dietary preferences are no longer determinants of social standing; every individual possesses infinite possibilities.</p>
+    </div>
+    <div class="hidden-content">
+        <p>Are you willing to challenge preset labels and expectations to explore a more complex but also richer self?</p>
+    </div>
+    <script>
+        function hideContent() {
+            document.querySelector('.center-content').style.display = 'none';
+            document.querySelector('.hidden-content').style.display = 'block';
+            document.body.style.backgroundColor = 'black';
+            document.body.style.backgroundImage = 'none';
+        }
+    </script>
+</body>
+</html>
